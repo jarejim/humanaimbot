@@ -1,0 +1,23 @@
+plugins {
+    id 'fabric-loom' version '1.0.SNAPSHOT'
+}
+
+group = 'com.humanaimbot'
+version = '1.0.0'
+archivesBaseName = 'humanaimbot'
+
+minecraft {
+    version = "1.21.11"
+    yarnMappings = "intermediary"
+    loaderVersion = "0.14.3" // Use the correct loader version for Fabric
+}
+
+dependencies {
+    modCompile "net.fabricmc:fabric-api:${project.ext.fabric_API_version}"
+}
+
+jar {
+    from("LICENSE") {
+        into("META-INF")
+    }
+}
