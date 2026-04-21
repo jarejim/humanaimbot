@@ -1,1 +1,27 @@
-{"type": "fabric","id": "humanaimbot","version": "1.0.0"}
+{
+    "schemaVersion": 1,
+    "id": "humanaimbot",
+    "version": "1.0.0",
+    "name": "Human Aim Bot",
+    "description": "Description of your mod",
+    "authors": [ "jarejim" ],
+    "contact": {
+        "homepage": "",
+        "sources": ""
+    },
+    "license": "MIT",
+    "icon": "assets/humanaimbot/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.humanaimbot.HumanAimBotClient"
+        ]
+    },
+    "mixins": [
+        "humanaimbot.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.11.0",
+        "minecraft": "1.21.11"
+    }
+}
